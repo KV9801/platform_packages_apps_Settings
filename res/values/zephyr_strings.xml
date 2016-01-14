@@ -296,6 +296,9 @@
     <string name="hex_hint">#ff000000</string>
     <string name="set">Set</string>
     <string name="color_default">Default</string>
+    <string name="reset_color_title">Reset</string>
+    <string name="reset_android_title">Android default</string>
+    <string name="reset_zephyr_title">Zephyr default</string>
 
     <!-- Navigation Bar -->
     <string name="navbar_interface_title">Interface</string>
@@ -503,4 +506,14 @@
     <string name="show_carrier_statusbar">Statusbar only</string>
     <string name="show_carrier_enabled">Lockscreen &amp; statusbar</string>
     <string name="status_bar_carrier_color">Carrier label color</string>
+
+    <!-- Status Bar Ticker -->
+    <string name="ticker_screen_title">Ticker</string>
+    <string name="ticker_title">Status Bar Ticker</string>
+    <string name="ticker_screen_summary">Customize the ticker style</string>
+    <string name="ticker_summary">Enable the old status bar ticker</string>
+    <string name="text_title">Text</string>
+    <string name="icon_title">Icon</string>
+    <string name="color_title">Color</string>
+    <string name="colors_title">Colors</string>
 </resources>
