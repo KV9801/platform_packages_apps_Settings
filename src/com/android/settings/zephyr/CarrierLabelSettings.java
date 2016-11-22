@@ -35,12 +35,16 @@ import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.settings.R;
 import com.android.settings.SettingsPreferenceFragment;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 public class CarrierLabelSettings extends SettingsPreferenceFragment
         implements OnPreferenceChangeListener {
 
     private static final String SHOW_CARRIER_LABEL = "status_bar_show_carrier";
     private static final String CUSTOM_CARRIER_LABEL = "custom_carrier_label";
     private static final String STATUS_BAR_CARRIER_COLOR = "status_bar_carrier_color";
+
+    static final int DEFAULT_STATUS_CARRIER_COLOR = 0xffffffff;
 
     private PreferenceScreen mCustomCarrierLabel;
     private ListPreference mShowCarrierLabel;
@@ -55,6 +59,9 @@ public class CarrierLabelSettings extends SettingsPreferenceFragment
 
         PreferenceScreen prefSet = getPreferenceScreen();
         ContentResolver resolver = getActivity().getContentResolver();
+
+        int intColor;
+        String hexColor;
 
         mShowCarrierLabel = (ListPreference) findPreference(SHOW_CARRIER_LABEL);
         int showCarrierLabel = Settings.System.getInt(resolver,
