@@ -38,6 +38,7 @@ import com.android.internal.logging.MetricsLogger;
 import com.android.internal.logging.MetricsProto.MetricsEvent;
 import com.android.internal.utils.du.ActionConstants;
 import com.android.internal.utils.du.DUActionUtils;
+import com.android.settings.du.nav.ActionFragment;
 
 public class ButtonSettings extends ActionFragment implements OnPreferenceChangeListener {
 
@@ -159,3 +160,4 @@ public class ButtonSettings extends ActionFragment implements OnPreferenceChange
         }
         return false;
     }
+}
